@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1;">
+        <title>YO Bruh!</title>
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+                width: 97vw;
+                height: auto;
+            }
+            header .hed{
+                grid-area: hd;
+                padding:10px;
+                border-bottom:1px solid black;
+                display:flex;
+                flex-wrap:nowrap;
+                justify-content: space-around;
+                align-items: center;
+                gap: 30px;
+                width:100vw;
+                height: 100px;
+                margin: 0 10px 0 10px;
+                overflow: auto;
+            }
+            .hed div{
+                font-size: 1.2rem;
+            }
+            .top{
+                top:0;
+                text-align: center;
+                font-weight: bold;
+                background-color: lightgreen;
+                color:white;
+                width: 100vw;
+                height:auto;
+                margin: 0 0 10px 0;
+                padding: 10px;
+            }
+            .top a{
+                text-decoration: none;
+                color:white;
+            }
+            .hed img{
+                display:inline-block;
+                border-radius: 40%;
+                width: 100px;
+                height: 100%;
+            }
+            .cont{
+                position: relative;
+                display: inline-block;
+                font-size: 1rem;
+            }
+            h2{
+                font-family: 'Henny penny',cursive;
+                color:deepskyblue;
+                font-size: 2.5rem;
+            }
+            .box{
+                display:flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin: 30px;
+                justify-content: center;
+            }
+            h2{
+                text-align: center;
+            }
+            footer{
+                display:flex;
+                background-color: deepskyblue;
+                color:white;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+            }
+            .addr{
+                width: 100%;
+                height: auto;
+                line-height: 10px;
+            }
+            .image1{
+                width:200px;
+                height:200px;
+                border:1px solid black;
+                font-size: 2rem;
+                color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: auto;
+                background-image:url(download1.jpeg);
+                transition:all 1s ease-in;
+            }
+            .image1:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.264),rgba(0, 0, 0, 0.264)),url(download1.jpeg);
+                font-size: 3rem;
+                text-shadow: 2px 2px 2px black;
+            }
+            .image3{
+                width:200px;
+                height:200px;
+                border:1px solid black;
+                font-size: 2rem;
+                transition:all 1s ease-in;
+                color:white;
+                overflow: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image:url(download4.jpeg);
+                background-size: cover;
+            }
+            .image3:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.264),rgba(0, 0, 0, 0.264)),url(download4.jpeg);
+                font-size: 3rem;
+                text-shadow: 2px 2px 2px black;
+            }
+            .image4{
+                width:200px;
+                height:200px;
+                border:1px solid black;
+                transition:all 1s ease-in;
+                font-size: 2rem;
+                color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(download3.png);
+                overflow: auto;
+            }
+            .image4:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.264),rgba(0, 0, 0, 0.264)),url(download3.png);
+                font-size: 3rem;
+                text-shadow: 2px 2px 2px black;
+            }
+            .image5{
+                overflow: auto;
+                transition:all 1s ease-in;
+                width:200px;
+                height:200px;
+                border:1px solid black;
+                font-size: 2rem;
+                color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(images5.jpeg);
+            }
+            .image5:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.264),rgba(0, 0, 0, 0.264)),url(images5.jpeg);
+                font-size: 3rem;
+                text-shadow: 2px 2px 2px black;
+            }
+            .links{
+                background-color: deepskyblue;
+                text-decoration: none;
+                color:white;
+                font-size: 1.5rem;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="top">
+            <a href="main.html">Oceania of games---Gamers dream destination</a>
+        </div>
+        <header>
+            <div class="hed">
+                <section>
+                    <a href="main.html">
+                        <img src="Screenshot (1417).png" alt="img"><br>
+                    </a>
+                </section>
+                <div class="cont"><a href="" class="links">Home</a></div>
+                <div><a href="#footr" class="links">About</a></div>
+                <div><a href="#footr" class="links">Contacts</a></div>
+            </div>
+        </header>
+        <main>
+            <h2>Menu</h2>
+            <div class="box">
+                <a href="placement.html">
+                <div class="image1">
+                    <div>
+                    <p>Grab the Plc</p></div>
+                </div></a>
+                <a href="ro.html">
+                <div class="image3">
+                    <p>tac-tics</p>
+                </div></a>
+                <a href="arrange.html">
+                <div class="image4">
+                    <p>Puzzle</p>
+                </div></a>
+                <a href="rock.html">
+                <div class="image5">
+                    <p>R-P-S</p>
+                </div></a>
+            </div>
+        </main>
+        <footer id="footr">
+            <div class="footer">
+                <div class="addr">
+                    <h3>Location</h3>
+                    <p>221 Anna res.</p>
+                    <p>Palai, 507111</p>
+                    <p>Kottayam</p>
+                    <p>Kerala</p>
+                </div>
+                <div class="logos">
+                    <img src="l1.png" alt="h">
+                    <img src="l2.png" alt="h">
+                    <img src="l3.png" alt="h">
+                    <img src="l4.png" alt="h">
+                </div>
+                <p>&#174 2022, htnaver LLC</p>
+            </div>
+        </footer>
+    </body>
+</html>
