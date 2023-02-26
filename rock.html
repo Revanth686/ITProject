@@ -13,11 +13,26 @@
         }
         #gameDiv{
             font-family: 'Consolace', cursive;
-            border: 3px solid;
             border-radius: 25px;
+            border: 3px solid rgba(255, 0, 0, 0.156);
             padding: 10px;
             background-color: lightgrey;
             text-align: center;
+            animation: brd 4s ease-in infinite;
+        }
+        @keyframes brd{
+          0%{
+            border-top: 10px rgb(72, 0, 255);
+          }
+          33%{
+            border-right: 10px red;
+          }
+          66%{
+            border-bottom:10px rgb(0, 255, 89);
+          }
+          /* 100%{
+            border-left: 10px red;
+          } */
         }
         #playerText{
             color: blue;
@@ -25,17 +40,39 @@
         #computerText{
             color: red;
         }
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            overflow: hidden;
+            background: linear-gradient(90deg, #ee0808, #1a0cad, #2adf0e);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            animation: animate 3s linear infinite;
+            -webkit-background-clip: text;
+            color:#2adf0e06;
+        }
+        @keyframes animate {
+            0% {
+                background-position: -200%;
+            }
+            100% {
+                background-position: 200%;
+            }
+        }
     </style>
 </head>
 <body>
+  <h2>
+    ROCK-PAPER-SCISSORS
+  </h2>
     <div id="gameDiv">
         <h1 class="gameText" id="playerText">Player: </h1>
         <h1 class="gameText" id="computerText">Computer: </h1>
         <h1 class="gameText" id="resultText">Result: </h1>
         
-        <button class="choiceBtn">ROCK</button>
-        <button class="choiceBtn">PAPER</button>
-        <button class="choiceBtn">SCISSORS</button>
+        <button class="choiceBtn" style="overflow: auto; height: 30vh; text-align:end;">ROCK<img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC-ccfwjQoS1z9BwmVTh8lH2-_aX_gKXkmAwd8BGcTw7WB0dB1sbTMuVZrvgS4MUZzFZs&usqp=CAU"></button>
+        <button class="choiceBtn" style="overflow: auto; height: 30vh; text-align:end;">PAPER<img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tYxrSsbJLc-AC3M6PbPcGGFkORh8IQp2Xu1lxx5ChbXJn_MCNj6lNcQkU6eZxVGxFi0&usqp=CAU"></button>
+        <button class="choiceBtn" style="overflow: auto; height: 30vh; text-align:end;">Scissors<img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8PLE4IpZ0BaJiRfJ_loRNVKjmkfKwQkZKdEMti8ulZ3QY1AayXQutKi3_eTLgiv8ivU&usqp=CAU"></button>
     </div>
     <script >
         const playerText = document.querySelector("#playerText");
